@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEFRANÇOIS | MOT DU PRESIDENT</title>
+    <link rel="icon" type="image/jpg" href="/Assets/Picture/LeFrançois.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Sanchez&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="Assets/president.css">
+    <script src="https://kit.fontawesome.com/a338aac552.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- BARRE DE NAVIGATION    -->
+    <header>
+        <a href="/index.html"><img class="logo" src="/Assets/Picture/LeFrançois_logo.png" alt="LogoLefrançois"></a>
+        <nav class="nav_bar">
+            <input id="check" type="checkbox" name="">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul class="nav_link">
+                <li><a class="nav_name" href="/index.html">Accueil</a></li>
+                <li>
+                    <a id="lefr" onclick="myfunction()">Lefrancois<i class="fas fa-caret-down"></i></a>
+                    <div id="Dropdown1" class="dropdown1">
+                        <ul>
+                            <li><a class="anim_hover1" href="/president.html">Mot du Président</a></li>
+                            <li><a class="anim_hover1" href="/histoire.html">Histoire & Valeurs</a></li>
+                            <li><a class="anim_hover1" href="/organisation.html">Organisation</a></li>
+                            <li><a class="anim_hover1" href="/securite.html">Engagement Sécurité</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a id="acti" onclick="myfunction2()">Nos Activités<i class="fas fa-caret-down"></i></a>
+                    <div id="Dropdown2" class="dropdown2">
+                        <ul>
+                            <li><a class="anim_hover2" href="/metier.html">Nos Métiers</a></li>
+                            <li><a class="anim_hover2" href="/chantier.html">Chantiers</a></li>
+                            <li><a class="anim_hover2" href="/carriere.html">Carrière</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a class="nav_name" href="/realisation.html">Nos Réalisations</a></li>
+                <!--<li><a class="nav_name" href="/actualite.html">Actualités</a></li>-->
+                <a href="/contact.html" class="ct2"><button>Contactez-Nous</button></a>
+            </ul>
+        </nav>
+        
+        <a href="/contact.html" class="ct"><button>Contactez-Nous</button></a>
+    </header>
+
+    <!-- BARRE DE NAVIGATION-->
+    
+    <!--        SCRIPT BARRE NAVIGATION RESPONSIVE CLICK                -->
+
+    <script>
+        function myfunction() {
+            document.getElementById("Dropdown1").classList.toggle("show");
+        }
+        function myfunction2() {
+            document.getElementById("Dropdown2").classList.toggle("show");
+        }
+    </script>
+    
+    <!--        SCRIPT BARRE NAVIGATION SCROLL              -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        
+        $(window).scroll( function(){
+            
+            if ( $(window).scrollTop() > 80){
+                $('header').addClass('onScroll_header');
+                $('li').addClass('onScroll_li');
+            } else{
+                $('header').removeClass('onScroll_header');
+                $('li').removeClass('onScroll_li');
+            }
+        });
+    </script>
+    
+    <div class="sect1">
+        <div class="img_bc"></div>
+    </div>
+    
+    <section class="background_pre"> <!-- START SECTION-->
+
+        <!-- PARTIE PRESIDENT1-->
+        <div class="signature"><p>Le Président Directuer Général,<br>Alain LEFRANCOIS</p></div>
+        <h1 id="title_pre">MOT DU PRESIDENT</h1>
+        <div class="premier_partie">
+            <div class="alain">
+            </div>
+            <div class="text_historyV1">
+                <p>Depuis plus de 40 ans, je me suis engagé au coté de mes collaborateurs, pour développer l’histoire de la société <span>LEFRANCOIS Travaux Publics</span>. <br><br>
+                    Partis de peu, nous avons ensemble, gravis les marches de cette belle aventure, pour aujourd’hui <span>répondre aux enjeux de demain</span>.<br>
+                    Les enjeux sont multiples, cependant l’un d’entre me tient plus à cœur que jamais, le <span>Q.H.S.S.E</span> . <br>          
+                </p>
+            </div>
+        </div>
+
+        <!-- PARTIE PRESIDENT2-->
+        <div class="deuxieme_partie">
+            <p id="intro">Cet engagement s'applique à l'ensemble de nos collaborateurs, partenaires, personnels intérimaires 
+                et sous-traitants et s'appuie principalement sur :</p>
+            <p id="milieu"><span>-</span> Le choix de la compétence, <span class="bold">l'accueil et l'accompagnement</span> de notre personnel et 
+            de nos collaborateurs. <br><br>
+            <span>-</span> La formation régulière, <span class="bold">l'information</span>, <span class="bold">la sensibilisation</span> et <span class="bold">l'implification</span> de tous aux 
+            objectifs Q.H.S.S.E. <br><br>
+            <span>-</span> Le respect des <span class="bold">exigences réglementaires</span> et <span>normatives</span> pour chacun de nos clients
+            avec le même degré d'engagment (Etat, Privés, Particuliers). <br><br>
+            <span>-</span> L'évalution et <span class="bold">la maitrise des risque Q.H.S.S.E</span> avec la mise en place des actions associées 
+            pour la gestion de ceux-ci <br><br>
+            <span>-</span> La <span class="bold">prévention</span> des accidents de travail, des maladies professionnelles <br><br>
+            <span>-</span> La <span class="bold">prévention</span> des conditions d'hygiène, de Santé, de Sécuritén et de l'environnement <br><br>
+            <span>-</span> <span class="bold">L'amélioration continue par le retour d'expérience</span> depuis le "terrain" et la prise en compte 
+            de ces informations dans le management de l'entreprise <br><br>
+            <span>-</span> Le <span class="bold">respect de l'intégrité physique et morale de chacun</span> et la prise en compte de 
+            son environnement.
+            <p id="fin">Je me suis engagé à mettre en œuvre tous les moyens nécessaires à l’application de cette
+                politique en termes d’organisation, de personnel, de compétences, de temps et de matériel, à ce titre, je vérifie 
+                personnellement et chaque jour à l’évolution de notre société dans cette démarche.</p>
+        </div>
+
+        <div class="troisieme_partie"></div>        <!-- IMAGE-->
+
+
+    </section>  <!-- END SECTION-->
+    
+    
+    
+    
+    
+    
+    <footer>    <!-- FOOTER LEFRANCOIS START-->
+
+
+        <div class="background6">
+            <img src="/Assets/Picture/LeFrançois_logo.png" alt="">
+            <div class="info"><p>SAS LEFRANÇOIS Travaux Publics <br>845 Rue de l'Hôtel Dieu <br>62650 CLENLEU <br>Tél: 03 21 90 93 54 <br>Mail: contact@salefrancois.com </p></div>
+            <div class="horaire"><p>Horaires D'Ouverture: <br> Du Lundi au Vendredi <br> 08h30 - 12h30 <br> 14h00 - 17h00</p></div>
+            <div class="rs_link">
+                <h1>Suivez nos actualités :</h1>
+                <ul>
+                    <li><a href="https://www.instagram.com/lefrancoistp/?hl=fr"><i class="fab fa-instagram"></i></a> </li>
+                    <li><a href="https://www.facebook.com/lefrancoistp"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/societe-de-travaux-publics-lefrancois/mycompany/"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="footerv2">
+            <li class="mention"><a href="#">Lefrançois Travaux Publics© 2021</a></li>
+            <li class="mention"><a href="#">Plan du Site</a></li>
+            <li class="mention"><a href="#">Mention Légales</a></li>
+            <li class="mention"><a href="#">Politiques de confidentialités</a></li>
+        </div>
+
+
+    </footer>   <!-- FOOTER LEFRANCOIS END-->
+    
+    
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEFRANÇOIS | HISTOIRE & VALEURS</title>
+    <link rel="icon" type="image/jpg" href="/Assets/Picture/LeFrançois.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Sanchez&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="Assets/histoire.css">
+    <script src="https://kit.fontawesome.com/a338aac552.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <!-- BARRE DE NAVIGATION    -->
+    <header>
+        <a href="/index.html"><img class="logo" src="/Assets/Picture/LeFrançois_logo.png" alt="LogoLefrançois"></a>
+        <nav class="nav_bar">
+            <input id="check" type="checkbox" name="">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul class="nav_link">
+                <li><a class="nav_name" href="/index.html">Accueil</a></li>
+                <li>
+                    <a id="lefr" onclick="myfunction()">Lefrancois<i class="fas fa-caret-down"></i></a>
+                    <div id="Dropdown1" class="dropdown1">
+                        <ul>
+                            <li><a class="anim_hover1" href="/president.html">Mot du Président</a></li>
+                            <li><a class="anim_hover1" href="/histoire.html">Histoire & Valeurs</a></li>
+                            <li><a class="anim_hover1" href="/organisation.html">Organisation</a></li>
+                            <li><a class="anim_hover1" href="/securite.html">Engagement Sécurité</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a id="acti" onclick="myfunction2()">Nos Activités<i class="fas fa-caret-down"></i></a>
+                    <div id="Dropdown2" class="dropdown2">
+                        <ul>
+                            <li><a class="anim_hover2" href="/metier.html">Nos Métiers</a></li>
+                            <li><a class="anim_hover2" href="/chantier.html">Chantiers</a></li>
+                            <li><a class="anim_hover2" href="/carriere.html">Carrière</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a class="nav_name" href="/realisation.html">Nos Réalisations</a></li>
+                <!--<li><a class="nav_name" href="/actualite.html">Actualités</a></li>-->
+                <a href="/contact.html" class="ct2"><button>Contactez-Nous</button></a>
+            </ul>
+        </nav>
+        
+        <a href="/contact.html" class="ct"><button>Contactez-Nous</button></a>
+    </header>
+    
+    <!-- BARRE DE NAVIGATION    -->
+    
+    <!--        SCRIPT BARRE NAVIGATION RESPONSIVE CLICK                -->
+    
+    <script>
+        function myfunction() {
+            document.getElementById("Dropdown1").classList.toggle("show");
+        }
+        function myfunction2() {
+            document.getElementById("Dropdown2").classList.toggle("show");
+        }
+    </script>
+    
+    <!--        SCRIPT BARRE NAVIGATION SCROLL              -->
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        
+        $(window).scroll( function(){
+            
+            if ( $(window).scrollTop() > 80){
+                $('header').addClass('onScroll_header');
+                $('li').addClass('onScroll_li');
+            } else{
+                $('header').removeClass('onScroll_header');
+                $('li').removeClass('onScroll_li');
+            }
+        });
+    </script>
+    
+    <div class="sect1">
+        <div class="img_bc"></div>                  <!-- IMAGE BACKGROUND HISTORIE-->
+    </div>
+    
+    
+    
+    
+    <section class="histoire_bc">       <!-- START SECTION-->
+        
+
+        <h1 id="title_history">HISTOIRE <span id="slash"> / </span>  VALEURS</h1>
+
+<!-- PARTIE HISTOIRE-->
+        <div class="premier_partie">
+            <div class="text_historyV1">
+                <p>Entreprise Familliale créee à l'origine par <span>M. Yves LEFRANCOIS</span>  en 
+                    1968, avec la création de la branche Travaux Publics en 1981. <br><br>
+                    S.A.S LEFRANCOIS s'est aujourd'hui considérablement développée.
+                    Rachetée en 2000 par l'un de ses fils, <span>Alain LEFRANCOIS</span>, les secteurs d'activités se sont étendus.
+                    <br> Nous comptons désormais sur une centaine de collaborateurs en travaux publics, mais également d’une trentaine                          
+                    de collaborateur sur la <span>société de transports LEFRANCOIS</span>, une société développée en 2001. <br><br> Qui nous permet aujourd’hui de répondre 
+                    aux besoins de la <span>société LEFRANCOIS Travaux publics</span> en termes de transport et 
+                    de pouvoir être autonome mais également d’apporter à notre clientèle un service supplémentaire. 
+                </p>
+            </div>
+        </div>
+
+<!-- PARTIE VALEURS-->
+        <div class="nosvaleurs">
+            <h4>Nos Valeurs</h4><hr> <br>
+            <p><span id="intro_valeurs">Afin de satisfaire des attentes de notre personnel, de nos clients mais également de nos fournisseurs, la société LEFRANCOIS, met un point d’honneur :</span>  <br><br>
+                
+                <span id="text_valeurs">
+                    <span class="bold">-</span> A <span class="bold">l’écoute de son personnel</span>, aux valeurs humaines et familiales qui font notre force depuis tant d’année. <br> <br>
+                    <span class="bold">-</span> A la <span class="bold">transmission du savoir intergénérationnel</span> qui pour nous est essentiel pour construire les chantiers  <br>&ensp; de demain, en s’adaptant aux nouvelles technologies tout en conservant notre savoir faire. <br> <br>
+                    <span class="bold">- La qualité</span>, tant dans les conditions de travail que vis-à-vis de nos clients. <br> <br>                     
+                    <span class="bold">- L’hygiène</span>, la sécurité et la santé, que nous avons choisi d’organiser, de manager et de cadrer, nous <br>&ensp; permettant aujourd’hui d’intégrer ces valeurs dans notre quotidien par le biais de la certifications MASE. <br> <br>
+                    <span class="bold">- L’environnement</span>, une valeur existentielle que la société LEFRANCOIS souhaite développer un peu <br>&ensp; plus chaque jour. Les actes d’aujourd’hui conditionnerons les actes de demain, il est donc grand temps <br>&ensp; de travailler ensemble pour sauver notre planète. <br><br>
+                </span> 
+            </p>
+        </div>
+        <div class="troisieme_partie">
+            <div class="slider_history"></div>
+        </div>
+
+
+    </section>      <!-- END SECTION-->
+
+
+    <footer>    <!-- FOOTER LEFRANCOIS START-->
+
+
+        <div class="background6">
+            <img src="/Assets/Picture/LeFrançois_logo.png" alt="">
+            <div class="info"><p>SAS LEFRANÇOIS Travaux Publics <br>845 Rue de l'Hôtel Dieu <br>62650 CLENLEU <br>Tél: 03 21 90 93 54 <br>Mail: contact@salefrancois.com </p></div>
+            <div class="horaire"><p>Horaires D'Ouverture: <br> Du Lundi au Vendredi <br> 08h30 - 12h30 <br> 14h00 - 17h00</p></div>
+            <div class="rs_link">
+                <h1>Suivez nos actualités :</h1>
+                <ul>
+                    <li><a href="https://www.instagram.com/lefrancoistp/?hl=fr"><i class="fab fa-instagram"></i></a> </li>
+                    <li><a href="https://www.facebook.com/lefrancoistp"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/societe-de-travaux-publics-lefrancois/mycompany/"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="footerv2">
+            <li class="mention"><a href="#">Lefrançois Travaux Publics© 2021</a></li>
+            <li class="mention"><a href="#">Plan du Site</a></li>
+            <li class="mention"><a href="#">Mention Légales</a></li>
+            <li class="mention"><a href="#">Politiques de confidentialités</a></li>
+        </div>
+
+        
+    </footer>   <!-- FOOTER LEFRANCOIS END-->
+
+
+</body>
+</html>

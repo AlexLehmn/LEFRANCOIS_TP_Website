@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="/Assets/Picture/LeFrançois.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Sanchez&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="Assets/style.css">
+    <title>LEFRANÇOIS | TRAVAUX PUBLICS</title>
+    <script src="https://kit.fontawesome.com/a338aac552.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+            <!-- BARRE DE NAVIGATION-->
+    <header>
+        <a href="/index.html"><img class="logo" src="/Assets/Picture/LeFrançois_logo.png" alt="LogoLefrançois"></a>
+        <nav class="nav_bar">
+            <input id="check" type="checkbox" name="">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul class="nav_link">
+                <li><a class="nav_name" href="/index.html">Accueil</a></li>
+                <li>
+                    <a id="lefr" onclick="myfunction()">Lefrancois<i class="fas fa-caret-down"></i></a>
+                    <div id="Dropdown1" class="dropdown1">
+                        <ul>
+                            <li><a class="anim_hover1" href="/president.html">Mot du Président</a></li>
+                            <li><a class="anim_hover1" href="/histoire.html">Histoire & Valeurs</a></li>
+                            <li><a class="anim_hover1" href="/organisation.html">Organisation</a></li>
+                            <li><a class="anim_hover1" href="/securite.html">Engagement Sécurité</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a id="acti" onclick="myfunction2()">Nos Activités<i class="fas fa-caret-down"></i></a>
+                    <div id="Dropdown2" class="dropdown2">
+                        <ul>
+                            <li><a class="anim_hover2" href="/metier.html">Nos Métiers</a></li>
+                            <li><a class="anim_hover2" href="/chantier.html">Chantiers</a></li>
+                            <li><a class="anim_hover2" href="/carriere.html">Carrière</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a class="nav_name" href="/realisation.html">Nos Réalisations</a></li>
+                <!--<li><a class="nav_name" href="/actualite.html">Actualités</a></li>-->
+                <a href="/contact.html" class="ct2"><button>Contactez-Nous</button></a>
+            </ul>
+        </nav>
+        <a href="/contact.html" class="ct"><button>Contactez-Nous</button></a>
+    </header>
+
+            <!-- BARRE DE NAVIGATION-->
+
+    <!--        SCRIPT BARRE NAVIGATION RESPONSIVE CLICK                -->
+
+    <script>
+        function myfunction() {
+            document.getElementById("Dropdown1").classList.toggle("show");
+        }
+        function myfunction2() {
+            document.getElementById("Dropdown2").classList.toggle("show");
+        }
+    </script>
+
+    <!--        SCRIPT BARRE NAVIGATION SCROLL              -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript">
+
+        $(window).scroll( function(){
+
+            if ( $(window).scrollTop() > 80){
+                $('header').addClass('onScroll_header');
+                $('li').addClass('onScroll_li');
+            } else{
+                $('header').removeClass('onScroll_header');
+                $('li').removeClass('onScroll_li');
+            }
+        });
+    </script>
+
+     <!--        SCRIPT BARRE NAVIGATION RESPONSIVE CLICK                -->
+
+
+
+    <!--            VIDEO BC / TITLE            -->
+
+    <div class="sect1">
+        <video src="video.mp4" type="video/mp4" id="video_lefr" autoplay="autoplay">
+          </video>
+        <h1 id="text_video">Notre Passion à l'écoute de vos projets</h1>
+    </div>
+    <!--            VIDEO BC / TITLE            -->
+
+
+
+    <section class="information">     <!--  START SECTION1-->
+
+
+        <div class="background">
+            <div class="image">
+                <img src="/Assets/Picture/nomentreprise.png" alt="">
+            </div>
+            <div class="presentation">
+                <div class="entreprise_img"> </div>                                                                             <!--    PRESENTATION ENTREPRISE     -->
+                <div class="text_presentation"> <p>Entreprise spécialisée dans la conception et la 
+                    réalisation de chantier de <span id="Travaux">Travaux Publics</span> pour tous 
+                    types de clients tant privés que publics. <br>
+                    <br> Une équipe de 100 personnes près à vous accompagner dans chacun de vos projets.
+                </p></div>
+            </div>
+        </div>
+
+
+        <div class="background2">
+            <div class="travaux_publics">
+                <div class="travaux_img"></div>
+                <div class="text_travaux"><p>Notre entreprise réalise <span class="bold">tous types de
+                    chantiers de <span id="Travaux">Travaux publics</span></span> cependant, notre cœur de métier réside principalement dans la VRD.  <button id="btn"><a id="button_chantier" href="/chantier.html">voir plus</a></button> <br>
+                    <br>
+                    Notre <span class="bold">parc matériel</span>, autonome et récent étant un atout considérable pour le bon fonctionnement de nos chantiers. <br>                 <!--    PARC MATERIEL LEFRANCOIS     -->
+                    Nos ateliers de maintenance mécanique, équipés d’un outil de travail 
+                    ergonomique, nous permettent également la mise à disposition de <span class="bold">matériel fiable récent et efficace.</span></p>
+                </div>
+            </div>
+        </div>
+
+
+            <div class="background3">
+                <div class="localisation">
+                    <div class="localisation_img"></div>
+                    <div class="text_localisation"><p>Siège Social de la Société Lefrançois est située à <span class="bold">Clenleu</span>, à 
+                        une dizaine de kilomètre de Montreuil-sur-mer dans le Pas de Calais (62) <br><br>
+                        Nous possédons également une <span class="bold">zone de stockage de matériaux</span> ainsi                                      <!--    LOCALISATION LEFRANCOIS     -->
+                        qu’une carrière à proximité de notre siège.</p>
+                        <div class="icone"> <img id="icone_loc" src="/Assets/Picture/localisation.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>  <!-- END SECTION 1-->
+
+
+        <section class="plus">  <!-- START SECTION2-->
+
+
+            <div class="background4">
+                <div class="logo_HDF">
+                    <div class="text_HDF"><h1>Produits & Matériaux Locaux</h1></div>
+                </div>
+                <div class="logo_cola">
+                    <h1>130</h1>
+                    <div class="text_cola"><h2>Collaborateurs</h2></div>
+                </div>                                                                                          <!--    QUELQUES DONNÉE EN LOGO / CHIFFRES     -->
+                <div class="logo_year">
+                    <h1>40</h1>
+                    <div class="text_year"><h2>Années D'experience</h2></div>
+                </div>
+                <div class="logo_env">
+                    <div class="text_env"><h1>Protection environnementale</h1></div>
+                </div>
+            </div>
+
+
+        </section>  <!-- END SECTION2-->
+
+
+
+        <section class="recrutement">   <!-- START SECTION3 -->
+
+
+            <div class="background5">
+                <div class="background_slider">
+                    <div class="slider">
+                        <div class="slide"></div>
+                        <div class="slide"></div>
+                        <div class="slide"></div>
+                        <div class="slide"></div>
+                    </div>
+                </div>                                                                                                                      <!--    RECRUTEMENT LEFRANCOIS     -->
+                <div class="information_recrutement">
+                    <img src="/Assets/Picture/nousrecrutons.png" alt="NousRecrutons">
+                    <p>Nos Équipes sont continuellement à la recherche de <span id="jaune2"> vos talents</span> , nous croyons en l'esprit de chacun au profit des enjeux communs.
+                        <span id="jaune">Vous êtes les acteurs de demain</span> et nous avons besoins de vous pour le construire.
+                    </p>
+                    <div class="buttons">
+                        <div class="container">
+                            <a href="#" class="btn effect01" target="_blank"><span>REJOIGNEZ-NOUS</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>  <!-- END SECTION3   -->
+
+
+                                <!-- FOOTER LEFRANCOIS START-->
+        <footer>
+            <div class="background6">
+                <img src="/Assets/Picture/LeFrançois_logo.png" alt="">
+                <div class="info"><p>SAS LEFRANÇOIS Travaux Publics <br>845 Rue de l'Hôtel Dieu <br>62650 CLENLEU <br>Tél: 03 21 90 93 54 <br>Mail: contact@salefrancois.com </p></div>
+                <div class="horaire"><p>Horaires D'Ouverture: <br> Du Lundi au Vendredi <br> 08h30 - 12h30 <br> 14h00 - 17h00</p></div>
+                <div class="rs_link">
+                    <h1>Suivez nos actualités :</h1>
+                    <ul>
+                        <li><a href="https://www.instagram.com/lefrancoistp/?hl=fr"><i class="fab fa-instagram"></i></a> </li>
+                        <li><a href="https://www.facebook.com/lefrancoistp"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/societe-de-travaux-publics-lefrancois/mycompany/"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footerv2">
+                <li class="mention"><a href="#">Lefrançois Travaux Publics© 2021</a></li>
+                <li class="mention"><a href="#">Plan du Site</a></li>
+                <li class="mention"><a href="#">Mention Légales</a></li>
+                <li class="mention"><a href="#">Politiques de confidentialités</a></li>
+            </div>
+        </footer>
+                                <!-- FOOTER LEFRANCOIS END-->
+
+    </body>
+    </html>

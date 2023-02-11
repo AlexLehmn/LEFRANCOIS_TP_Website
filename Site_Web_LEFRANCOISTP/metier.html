@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEFRANÇOIS | NOS METIER</title>
+    <link rel="icon" type="image/jpg" href="/Assets/Picture/LeFrançois.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Sanchez&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="Assets/metier.css">
+    <script src="https://kit.fontawesome.com/a338aac552.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <a href="/index.html"><img class="logo" src="/Assets/Picture/LeFrançois_logo.png" alt="LogoLefrançois"></a>
+        <nav class="nav_bar">
+            <input id="check" type="checkbox" name="">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul class="nav_link">
+                <li><a class="nav_name" href="/index.html">Accueil</a></li>
+                <li>
+                    <a id="lefr" onclick="myfunction()" >Lefrancois<i class="fas fa-caret-down"></i></a>
+                    <div id="Dropdown1" class="dropdown1">
+                        <ul>
+                            <li><a class="anim_hover1" href="/president.html">Mot du Président</a></li>
+                            <li><a class="anim_hover1" href="/histoire.html">Histoire & Valeurs</a></li>
+                            <li><a class="anim_hover1" href="/organisation.html">Organisation</a></li>
+                            <li><a class="anim_hover1" href="/securite.html">Engagement Sécurité</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a id="acti" onclick="myfunction2()" >Nos Activités<i class="fas fa-caret-down"></i></a>
+                    <div id="Dropdown2" class="dropdown2">
+                        <ul>
+                            <li><a class="anim_hover2" href="/metier.html">Nos Métiers</a></li>
+                            <li><a class="anim_hover2" href="/chantier.html">Chantiers</a></li>
+                            <li><a class="anim_hover2" href="/carriere.html">Carrière</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a class="nav_name" href="/realisation.html">Nos Réalisations</a></li>
+                <!--<li><a class="nav_name" href="/actualite.html">Actualités</a></li>-->
+                <a href="/contact.html" class="ct2"><button>Contactez-Nous</button></a>
+            </ul>
+        </nav>
+        
+        <a href="/contact.html" class="ct"><button>Contactez-Nous</button></a>
+    </header>
+    
+    
+    <script>
+        function myfunction() {
+            document.getElementById("Dropdown1").classList.toggle("show");
+        }
+        function myfunction2() {
+            document.getElementById("Dropdown2").classList.toggle("show");
+        }
+    </script>
+    
+    <!--        SCRIPT BARRE NAVIGATION SCROLL              -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        
+        $(window).scroll( function(){
+            
+            if ( $(window).scrollTop() > 80){
+                $('header').addClass('onScroll_header');
+                $('li').addClass('onScroll_li');
+            } else{
+                $('header').removeClass('onScroll_header');
+                $('li').removeClass('onScroll_li');
+            }
+        });
+    </script>
+
+    <!--                    JQUERY                      -->
+
+
+    <script>
+        $(function() {
+    /**
+    * Smooth scrolling to page anchor on click
+    **/
+    $("a[href*='#']:not([href='#'])").click(function() {
+        if (
+            location.hostname == this.hostname
+            && this.pathname.replace(/^\//,"") == location.pathname.replace(/^\//,"")
+        ) {
+            var anchor = $(this.hash);
+            anchor = anchor.length ? anchor : $("[name=" + this.hash.slice(1) +"]");
+            if ( anchor.length ) {
+                $("html, body").animate( { scrollTop: anchor.offset().top }, 1000);
+            }
+        }
+    });
+});
+    </script> 
+
+    <!--                    JQUERY                      -->
+    
+    <div class="sect1">
+        <div class="img_bc"></div>
+    </div>
+    
+    <section class="background_met">
+        <h1 id="title_met">NOS MÉTIERS</h1>
+        <div class="bouton1">
+            <a href="#lien" class="btn" id="vrd">
+                <img src="/Assets/Picture/vrd_logo1.png" alt="">
+                <h2>VRD</h2>
+            </a>
+            <a href="#lien2" class="btn" id="assainissement">
+                <img src="/Assets/Picture/logo_assainissement.png" alt="">          
+                <h2>Assainissement</h2>
+            </a>
+            <a href="#lien3" class="btn" id="enrobe">
+                <img src="/Assets/Picture/enrobe_logo.png" alt="">
+                <h2 id="name">Enrobés / Gravillonage</h2>
+            </a>
+        </div>
+        <div class="bouton2">
+            <a href="#lien5" class="btn" id="location">
+                <img src="/Assets/Picture/logo_materiel.png" alt="">
+                <h2>Location Matériel</h2>
+            </a>
+            <a href="#lien4" class="btn" id="Eau Potable">
+                <img src="/Assets/Picture/eau_logo.png" alt="">
+                <h2>Eau Potable</h2>
+            </a>
+            <a href="#lien6" class="btn" id="terrassement">
+                <img src="/Assets/Picture/terrassement_logo.png" alt="">
+                <h2>Terrasement</h2>
+            </a>
+        </div>
+
+        <div class="text" id="lien">
+            <p>LEFRANCOIS Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis est optio repellat quam dolore expedita, similique perferendis 
+                labore ipsam. Iste accusamus ea quas asperiores suscipit eum minus maiores voluptatum neque.</p>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="vrd_partie" >
+            <img class="vrd_img" src="/Assets/Picture/vrd_logo1.png" alt="">
+            <div class="barre1"></div>
+            <div class="box_vrd">
+                <h1 id="title_vrd">VRD</h1>
+                <div class="text_vrd">
+                    <p id="para1">LEFRANCOIS sera toujours à votre disposition pour  permettre à vos projets de prendre vie. <br> <br></p>
+                    <p id="para2">Après plusieurs année d'expérience dans l'activité VRD. Lorem ipsum dolor sit amet consecteturerferendis pariatur c
+                        aspernatur dicta distinctio ad laborum ex odio omnis. <span id="lien2"></span></p>
+                </div>
+                <div class="image"></div>
+            </div>
+        </div>
+
+        <div class="assainissement_partie" >
+            <img class="assainissement_img" src="/Assets/Picture/logo_assainissement.png" alt="">
+            <div class="barre2"></div>
+            <div class="box_assainissement">
+                <h1 id="title_assainissement">Assainissement</h1>
+                <div class="text_assainissement">
+                    <p id="para3">LEFRANCOIS sera toujours à votre disposition pour  permettre à vos projets de prendre vie. <br> <br></p>
+                    <p id="para4">Après plusieurs année d'expérience dans l'activité VRD. Lorem ipsum dolor sit amet consecteturerferendis pariatur c
+                        aspernatur dicta distinctio ad laborum ex odio omnis.<span id="lien3"></span></p>
+                </div>
+                <div class="image2"></div>
+            </div>
+        </div>
+
+        <div class="enr_partie" >
+            <img class="enr_img" src="/Assets/Picture/enrobe_logo.png" alt="">
+            <div class="barre3"></div>
+            <div class="box_enr">
+                <h1 id="title_enr">ENROBÉS / GRAVILLIONAGE</h1>
+                <div class="text_enr">
+                    <p id="para5">LEFRANCOIS sera toujours à votre disposition pour  permettre à vos projets de prendre vie. <br> <br></p>
+                    <p id="para6">Après plusieurs année d'expérience dans l'activité VRD. Lorem ipsum dolor sit amet consecteturerferendis pariatur c
+                        aspernatur dicta distinctio ad laborum ex odio omnis.<span id="lien4"></span></p>
+                </div>
+                <div class="image3"></div>
+            </div>
+        </div>
+
+        <div class="eau_partie" >
+            <img class="eau_img" src="/Assets/Picture/eau_logo.png" alt="">
+            <div class="barre4"></div>
+            <div class="box_eau">
+                <h1 id="title_eau">EAU POTABLE</h1>
+                <div class="text_eau">
+                    <p id="para7">LEFRANCOIS sera toujours à votre disposition pour  permettre à vos projets de prendre vie. <br> <br></p>
+                    <p id="para8">Après plusieurs année d'expérience dans l'activité VRD. Lorem ipsum dolor sit amet consecteturerferendis pariatur c
+                        aspernatur dicta distinctio ad laborum ex odio omnis.<span id="lien5"></span></p>
+                </div>
+                <div class="image4"></div>
+            </div>
+        </div>
+
+        <div class="loc_partie" >
+            <img class="loc_img" src="/Assets/Picture/logo_materiel.png" alt="">
+            <div class="barre5"></div>
+            <div class="box_loc">
+                <h1 id="title_loc">LOCATION DE MATÉRIELS</h1>
+                <div class="text_loc">
+                    <p id="para9">LEFRANCOIS sera toujours à votre disposition pour  permettre à vos projets de prendre vie. <br> <br></p>
+                    <p id="para10">Après plusieurs année d'expérience dans l'activité VRD. Lorem ipsum dolor sit amet consecteturerferendis pariatur c
+                        aspernatur dicta distinctio ad laborum ex odio omnis.<span id="lien6"></span></p>
+                </div>
+                <div class="image5"></div>
+            </div>
+        </div>
+
+        <div class="terra_partie" >
+            <img class="terra_img" src="/Assets/Picture/terrassement_logo.png" alt="">
+            <div class="barre6"></div>
+            <div class="box_terra">
+                <h1 id="title_terra">Terrasement</h1>
+                <div class="text_terra">
+                    <p id="para11">LEFRANCOIS sera toujours à votre disposition pour  permettre à vos projets de prendre vie. <br> <br></p>
+                    <p id="para12">Après plusieurs année d'expérience dans l'activité VRD. Lorem ipsum dolor sit amet consecteturerferendis pariatur c
+                        aspernatur dicta distinctio ad laborum ex odio omnis.</p>
+                </div>
+                <div class="image4"></div>
+            </div>
+        </div>
+
+
+    </section>
+
+    
+    
+    
+    
+    
+    
+    <footer>
+        <div class="background6">
+            <img src="/Assets/Picture/LeFrançois_logo.png" alt="">
+            <div class="info"><p>SAS LEFRANÇOIS Travaux Publics <br>845 Rue de l'Hôtel Dieu <br>62650 CLENLEU <br>Tél: 03 21 90 93 54 <br>Mail: contact@salefrancois.com </p></div>
+            <div class="horaire"><p>Horaires D'Ouverture: <br> Du Lundi au Vendredi <br> 08:30 - 12:30 <br> 14h00 - 17h00</p></div>
+            <div class="rs_link">
+                <h1>Suivez nos actualités :</h1>
+                <ul>
+                    <li><a href="https://www.instagram.com/lefrancoistp/?hl=fr"><i class="fab fa-instagram"></i></a> </li>
+                    <li><a href="https://www.facebook.com/lefrancoistp"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/societe-de-travaux-publics-lefrancois/mycompany/"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="footerv2">
+            <li class="mention"><a href="#">Lefrançois Travaux Publics© 2021</a></li>
+            <li class="mention"><a href="#">Plan du Site</a></li>
+            <li class="mention"><a href="#">Mention Légales</a></li>
+            <li class="mention"><a href="#">Politiques de confidentialités</a></li>
+        </div>
+    </footer>
+    
+    
+</body>
+</html>

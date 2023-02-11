@@ -1,0 +1,822 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
+@import url('http://fonts.cdnfonts.com/css/lovelo?styles=25962');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(250, 250, 250);
+    background-repeat: no-repeat;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;      
+    align-items: center;                      
+    padding: 10px 10px;
+    background-color: white;
+    z-index: 2;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+}
+
+
+/*         PARAMETRE LIEN BARRE DE NAVIGATION        */
+
+.nav_bar {
+    margin: 0 auto;
+    
+}
+
+.nav_link {
+    display: flex;
+    list-style: none;                    
+}
+
+.nav_link li {
+    padding: 0px 50px;
+    position: relative;                    
+    transition: all 0.4s ease;
+}
+
+.nav_link li a {
+    color: black;
+    text-decoration: none;                  
+    font-size: 2em;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.nav_link li:hover .nav_name {
+    color: #efc21b;                     
+}
+
+.nav_name {
+    margin: 0 auto;
+    transition: .25s;                       
+}
+
+.logo {
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+
+
+/*      ANIMATION HOVER DROPDOWN LEFRANCOIS        */
+
+
+#lefr i {
+    padding-left: 7px;
+}
+
+#lefr {
+    transition: .25s;                       
+}
+
+.nav_link li:hover #lefr {
+    color: #efc21b;
+    cursor: pointer;               
+}
+
+.anim_hover1 {
+    position: relative;
+}
+
+.anim_hover1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 3px;                    
+    background:#3a3c8a;
+    transform: scaleX(0);
+    transform-origin: 0 0;
+    transition: .3s ease-in-out;
+}
+
+
+.anim_hover1:hover {
+    color: rgb(75, 75, 75);      
+}
+
+.anim_hover1:hover::after {
+    transform: scaleX(1);           
+}
+
+
+
+
+/*      PARAMETRE DROPDOWN LEFRANCOIS        */
+
+
+.dropdown1 {
+    display: none;                       
+    z-index: 100;
+}
+
+.dropdown1 ul {
+    display: block;                      
+    list-style: none;
+}
+
+.dropdown1 ul li {          
+    border-bottom: solid 2px rgba(161, 161, 161, 0.802);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding: 17px 27px;
+    text-align: center;
+}
+
+.dropdown1 ul li a {
+    font-size: 1.5em;                       
+    font-family: 'Bebas Neue', cursive;
+}
+
+@media screen and (min-width: 1420px) {
+    
+    
+    .onScroll_header {
+        height: 100px;
+        transition: .5s;
+    }
+    
+
+    .onScroll_header .logo {
+        height: auto;
+        width: 75%;
+    }
+    
+    
+    .nav_link li:hover .dropdown1 {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 100%;                              
+        background-color:rgb(245, 245, 245);
+        border-radius: 7px;
+        border-top: solid 3px #efc21b;
+    }
+    
+}
+
+.nav_link li:hover .dropdown1 ul {
+    perspective:  1000px;
+}
+
+.nav_link li:hover .dropdown1 ul li {
+    transform-origin: top center;
+    opacity: 0;
+}
+
+.nav_link li:hover .dropdown1 ul li:nth-child(0) {
+    animation: animate 600ms ease-in-out forwards;
+    animation-delay: -160ms;
+}
+.nav_link li:hover .dropdown1 ul li:nth-child(1) {
+    animation: animate 600ms ease-in-out forwards;
+    animation-delay: 0ms;
+}
+.nav_link li:hover .dropdown1 ul li:nth-child(2) {
+    animation: animate 600ms ease-in-out forwards;
+    animation-delay: 100ms;
+}
+.nav_link li:hover .dropdown1 ul li:nth-child(3) {
+    animation: animate 600ms ease-in-out forwards;
+    animation-delay: 200ms;
+}
+.nav_link li:hover .dropdown1 ul li:nth-child(4) {
+    animation: animate 600ms ease-in-out forwards;
+    animation-delay: 300ms;
+}
+.nav_link li:hover .dropdown1 ul li:nth-child(5) {
+    animation: animate 600ms ease-in-out forwards;
+    animation-delay: 400ms;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotateX(-90deg);
+    }
+    50% {
+        transform: rotateX(20deg);
+    }
+    100% {
+        opacity: 1;
+        transform: rotateX(0deg);
+    }
+}
+
+
+
+/*      PARAMETRE DROPDOWN ACTIVITE        */
+
+
+.dropdown2 {
+    display: none;
+    z-index: 99;
+}
+
+.dropdown2 ul {
+    display: block;
+    list-style: none;
+}
+
+.dropdown2 ul li {
+    width: 230px;
+    padding: 17px 0px;
+    text-align: center;
+    border-bottom: solid 1px rgb(161, 161, 161);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.dropdown2 ul li a {
+    font-size: 1.5em;
+    font-family: 'Bebas Neue', cursive;
+}
+
+@media screen and (min-width: 1420px) {
+    
+    .nav_link li:hover .dropdown2 {
+        display: block;
+        position: absolute;
+        left: 8px;
+        top: 100%;                              
+        background-color:rgb(245, 245, 245);
+        border-radius: 7px;
+        border-top: solid 3px #efc21b;
+    }
+}
+
+.nav_link li:hover .dropdown2 ul {
+    perspective:  2000px;
+}
+
+.nav_link li:hover .dropdown2 ul li {
+    transform-origin: top center;
+    opacity: 0;
+}
+
+.nav_link li:hover .dropdown2 ul li:nth-child(0) {
+    animation: animate 600ms ease-in-out forwards;
+    animation-delay: -160ms;
+}
+.nav_link li:hover .dropdown2 ul li:nth-child(1) {
+    animation: animate 600ms ease-in-out forwards;
+    animation-delay: 0ms;
+}
+.nav_link li:hover .dropdown2 ul li:nth-child(2) {
+    animation: animate 600ms ease-in-out forwards;
+    animation-delay: 100ms;
+}
+
+.nav_link li:hover .dropdown2 ul li:nth-child(3) {
+    animation: animate 600ms ease-in-out forwards;
+    animation-delay: 200ms;
+}
+
+
+
+/*      ANIMATION PARAMETRE DROPDOWN ACTIVITE        */
+
+
+#acti i {
+    padding-left: 7px;
+}
+
+#acti {
+    transition: .25s;                       
+}
+
+.nav_link li:hover #acti {
+    color: #efc21b;
+    cursor: pointer;
+}
+
+.anim_hover2 {
+    position: relative;
+}
+
+.anim_hover2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 3px;                    
+    background:#3a3c8a;
+    transform: scaleX(0);
+    transform-origin: 0 0;
+    transition: .3s ease-in-out;
+}
+
+
+.anim_hover2:hover {
+    color: rgb(75, 75, 75);       
+}
+
+.anim_hover2:hover::after {
+    transform: scaleX(1);           
+}
+
+
+
+/*      PARAMETRE BOUTON CONTACT BARRE DE NAVIGATION    */
+
+
+.ct button {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.8em;
+    color: black;                   
+    text-decoration: none;
+    padding: 0px 50px;
+    padding: 15px 35px;
+    background-color: #ffe27b;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.4s ease 0s;
+    max-width: 40rem;
+}
+
+.ct button:hover {
+    background-color: #efc21b;
+    color: white;
+}
+
+/*      PARAMETRE BOUTON CONTACT BARRE DE NAVIGATION  RESPONSIVE   */
+
+
+.ct2 {
+    display: none;
+}
+
+
+#check {
+    display: none;
+}
+
+.checkbtn {
+    display: none;
+}
+
+
+
+/*          BARRE DE NAVIGATION RESPONSIVE              */
+
+
+
+
+@media screen and (max-width: 1865px) {
+    .rs_link {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1520px) {
+    .nav_link  {
+        font-size: 0.9em;
+    }
+    
+    .ct button {
+        font-size: 1.2em;
+    }
+    
+    .content h1 {
+        font-size: 3em;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1420px) {
+    .ct {
+        display: none;
+    }
+    
+    .ct2 {
+        display: block;
+        padding-top: 15px;
+        height: 30vh;
+        max-height: 30vh;
+        width: 100%;
+        overflow-y: scroll;
+    }
+    
+    .ct2 button {
+        margin-top: 40px;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 2em;
+        color: black;                   
+        text-decoration: none;
+        padding: 15px 35px;
+        background-color: #ffe27b;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.4s ease 0s;
+    }
+    
+    .content h1 {
+        font-size: 3em;
+    }
+    
+    .checkbtn {
+        display: block;
+        float: right;
+        z-index: 200;
+        font-size: 2em;
+        padding-left: 200px;
+    }
+}
+
+@media screen and (max-width: 1420px) {
+    
+    .nav_bar {
+        display: block;
+    }
+    
+    .nav_link{
+        position: fixed;
+        z-index: 97;
+        background: rgb(250, 250, 250);
+        top: 90px;
+        left: -100%;
+        text-align: center;
+        display: block;
+        transition: all .5s;
+        height: 100vh;
+        max-height: 100vh;
+        width: 100%;
+        overflow-y: scroll;
+    }
+    
+    .nav_link li {
+        padding-bottom: 3px;
+        border-bottom: solid 1px black;
+        
+    }
+    
+    .nav_link li a {
+        font-size: 2em;
+    }
+    
+    .dropdown1 ul {
+        padding-top: 10px;
+        display: inline-table;
+    }
+    
+    .dropdown1 ul li {
+        background-color:rgb(250, 250, 250);
+        list-style: none;
+        border: none;
+        padding-left: 27px;
+    }
+    
+    .dropdown1 ul li a {
+        font-size: 1.7em;
+        font-family: 'Bebas Neue', cursive;
+        color: #3a3c8a;
+    }
+    
+    .dropdown2 ul {
+        padding-top: 10px;
+        display: inline-table;
+    }
+    
+    .dropdown2 ul li {
+        background-color:rgb(250, 250, 250);
+        list-style: none;
+        border: none;
+        padding-left: 2px;
+    }
+    
+    .dropdown2 ul li a {
+        font-size: 1.7em;
+        font-family: 'Bebas Neue', cursive;
+        color: #3a3c8a;
+    }
+    
+    .nav_link li  {
+        padding-top: 50px;
+    }
+    
+    #check:checked ~ ul {
+        left: 0;
+    }
+    
+    .logo {
+        height: 19mm;
+        width: 30mm;
+        cursor: pointer;
+    }
+    
+    .show {
+        display: block;
+    }
+}
+
+/*          PREMIERE PARTIE HISTOIRE    */
+
+.sect1 {
+    background-color: black;
+    height: 60vh;
+    top: 150px;
+    position: relative;
+}
+
+.sect1 .img_bc {
+    background-image: url('/Assets/Picture/securite_bc.jpg');
+    background-size: cover;
+    background-position: center;
+    top: 150px;
+    height: 60vh;
+    width: 100%;
+}
+
+.sect1 #text_img {
+    width:100%;
+    text-align:center;
+    position: absolute;
+    top: 30%;
+    color: white;
+    font-size: 7rem;
+    font-family: 'Bebas Neue', cursive;
+    word-spacing: 20px;
+    font-weight: 590;
+    letter-spacing: 2px;
+    margin: 0 auto;
+}
+
+.background_sec {
+    position: relative;
+    width: 1500px;
+    height: 1500px;
+    background: white;
+    margin: 0 auto !important;
+    display: block;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.background_sec #title_sec {
+    font-family: 'Lovelo', sans-serif;
+    padding-top: 50px;
+    font-size: 4.5em;
+    text-align: center;
+    color: #efc21b;
+    padding-bottom: 20px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.premiere_partie {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+.premiere_partie p {
+    width: 1500px;
+    height: 270px;
+    padding: 3rem 3rem 3rem 3rem;
+    text-align: justify;
+    font-size: 1.6em;
+    font-family: 'Inter', sans-serif;
+    color: black;
+}
+
+.deuxieme_partie {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.troisieme_partie {
+    width: 100%;
+    height: 350px;
+    display: block;
+    justify-content: center;
+}
+
+.troisieme_partie h1 {
+    color: #3a3c8a;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 3em;
+    height: 50px;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+
+.troisieme_partie p {
+    width: 1500px;
+    height: 300px;
+    padding: 3rem 3rem 0rem 3rem;
+    text-align: justify;
+    font-size: 1.55em;
+    font-family: 'Inter', sans-serif;
+    color: black;
+}
+
+.quatrieme_partie {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+#logo_mase {
+    width: 250px;
+    height: auto;
+}
+
+#logo_lefr {
+    width: 200px;
+    height: auto;
+}
+
+.cinquieme_partie {
+    width: 100%;
+    height: 100px;
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cinquieme_partie p {
+    width: 1500px;
+    height: 400px;
+    padding: 1rem 3rem 3rem 3rem;
+    text-align: justify;
+    font-size: 1.55em;
+    font-family: 'Inter', sans-serif;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    height: 265px;
+    background: linear-gradient(0deg, rgb(235, 235, 235) 80%, rgb(247, 247, 247) 80%);
+    width: 100%;
+    position: relative;
+    margin: 0 auto !important;
+    top: 70px;
+    
+}
+
+
+
+.background6 {
+    padding-top: 70px;
+    margin: 0 auto;
+    width: 100%;
+    height: 196px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.background6 img {
+    padding-top: 20px;
+}
+
+.info {
+    padding-top: 30px;
+}
+
+.info p {
+    font-family: 'Inter', sans-serif;
+}
+
+.horaire {
+    padding-top: 10px;
+}
+
+.horaire p {
+    font-family: 'Inter', sans-serif;
+}
+
+
+
+.rs_link ul {
+    display: flex;
+    justify-content: center;        
+    list-style-type: none;                 /*   PARAMETRE POSITION LOGO RS */
+    font-size: 0.8em;
+}
+
+.rs_link li {
+    margin: 0px 25px;
+    text-decoration: none;
+    height: 58px;
+    width: 58px;
+    display: flex;                             /* PARAMETRE OMBRE POUR LOGO RS  */
+    align-items: center;
+    justify-content: center;
+    border-radius: 78px;
+    background: #e4e4e4;
+    box-shadow:  5px 5px 10px #ababab,
+                 -5px -5px 10px #ffffff;
+}
+
+.rs_link li a {
+    font-size: 1.6em;                   /*  PARAMETRE LOGO RS   */
+}
+
+.rs_link li:hover {
+    cursor: pointer;
+    border-radius: 78px;
+    background: linear-gradient(145deg, #cdcdcd, #f4f4f4);
+    box-shadow:  5px 5px 10px #ababab,
+                 -5px -5px 10px #ffffff;
+}
+
+.rs_link li:nth-child(1) i {            /*  COLOR INSTA */
+    color:#dd2a7b;
+}
+
+.rs_link li:nth-child(2) i {            /*  COLOR FACEBOOK */
+    color:#0080F7;
+}
+
+.rs_link li:nth-child(3) i {            /* COLOR LINKEDIN   */
+    color:#0e76a8;
+}
+
+.rs_link h1 {
+    font-size: 25px;
+    letter-spacing: 3px;
+    /*font-family: 'Bebas Neue', cursive;*/
+    font-family: 'Inter', sans-serif;
+    padding-bottom: 20px;
+    color: black;
+    font-weight: 500;
+    padding-right: 30px;
+}
+
+.footerv2 {
+    border-top: solid 2px black;
+    margin: 0 auto;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 32px;
+    background: #efc21b;
+}
+
+.footerv2 li a {
+    color: black;
+    font-family: 'Bebas Neue', cursive;
+    text-decoration: none !important;
+    font-size: 20px;
+}
+
+.mention {
+    padding: 0px  40px;
+    text-decoration: none !important;
+    list-style-type: none;
+    border-right: solid 4px black;
+}
+
+.footerv2 li:nth-child(4) {
+    border: none;
+}
